@@ -43,9 +43,12 @@ Imaging shows my work with using data handling and imaging to produce composite 
 
 ## Further Work
 Some improvements needed before futher work, or alongside futherwork are:
+* !!! Handle images are cropped by the edges of the mosaics, which results in an error and an unusable image !!!
 * Adding redshift labels on the produced stamps.
 * Changing axes on produced stamps to RA/DEC coordinates.
 * Producing code to recursively create RGB images from the multi-band stamps.
+
+
 My next objectives are to:
 * Find a demographic to compare deconvolved images against.
 * Cull and produce JWST stamps of these galaxies using the COSMOS2020 catalog and COSMOS-Web images.
