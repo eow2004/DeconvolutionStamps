@@ -7,7 +7,7 @@ I am going to do research testing and evaluating a new deconvolution tool on a s
 
 Ground based radio observations are fairly availible and Hubble images stand to be a good baseline to compare against; however, with a new state-of-the-art telescope in the form of the James-Webb Space Telescope, coupled with the fact that the deconvolution model was trained and modeled around JWST images, I figured I should play with the new public data release.
 
-Currently, I have worked through 2 Jupyter Notebooks which prepare singular images of galaxies in multiple bands, able to be used for comparison.
+Currently, I have worked through 3 Jupyter Notebooks which prepare singular images of galaxies in multiple bands, able to be used for comparison.
 
 
 ## [stamps.ipynb](stamps.ipynb)
@@ -40,6 +40,12 @@ All of the "target" galaxies in this project come from COSMOS2020, as the data a
 After producing the stamps for each band, Imaging can save them in a compressed .fits directory with a fits table with data for the galaxy. This data is from the COSMOS2020 catalog. This may be edited and/or scrapped, depending on whether I use the data to make checks and cuts in Stamps instead of Imaging.
 
 Imaging shows my work with using data handling and imaging to produce composite images of a galaxy, and the latter part showcases my abilities in handling .fits files, headers, and comments to effectively store data for astronomical use.
+
+
+## [comparisons.ipynb](comparisons.ipynb)
+Comparisons handles the final comparison work. Comparisons takes work from both previous notebooks, and results in a method to compare galaxies with certian criteria, and produce images of them in multiple wavelengths with data from a catalog.
+
+The latter work in Comparisons focuses on testing the criteria of samples used to train a deconvolution model. The galaxies used in the model have a magnitude in the Y, H, and Ks bands between 24.5 and 25.5, a signal to noise greater than 3 in each band, and a radius that encapulates 50% of the flux between 2 and 6.4 pixels.
 
 ## Further Work
 Some improvements needed before futher work, or alongside futherwork are:
